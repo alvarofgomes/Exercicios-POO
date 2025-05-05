@@ -1,0 +1,19 @@
+public class Employee {
+
+	private String name;
+	private double grossSalary;
+	private double tax;
+	
+	public double NetSalary() {
+		
+		
+		
+	}
+	
+	public void IncreseSalary(double percentage) {
+		
+		
+		
+	}
+	
+}

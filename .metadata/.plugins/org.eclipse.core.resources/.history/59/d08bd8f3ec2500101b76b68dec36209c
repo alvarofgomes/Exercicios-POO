@@ -1,0 +1,25 @@
+public class Produto {
+
+	public String nome;
+	public double preco;
+	public int estoque;
+	
+	public double tot() {
+		
+		return this.preco * this.estoque;
+		
+	}
+	
+	public int AdicionarProdutos(int qtd) {
+		
+		return this.estoque + qtd;
+		
+	}
+	
+	/*public int Removerprodutos() {
+		
+		
+		
+	}*/
+	
+}

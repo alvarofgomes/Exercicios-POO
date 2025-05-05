@@ -1,0 +1,35 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Produto p = new Produto();
+		
+		System.out.println("Digite Os Dados Do Produtos: ");
+		System.out.println("Nome: ");
+		p.nome = sc.nextLine();
+		System.out.println("Preço: ");
+		p.preco = sc.nextDouble();
+		System.out.println("Estoque Do Produto: ");
+		p.estoque = sc.nextInt();
+
+		System.out.println(p);
+		System.out.println("------------------------------------------------------------");
+		System.out.println("Adicone Mais Produtos Ao Estoque: ");
+		p.AdicionarProdutos(sc.nextInt());
+		
+		System.out.println("Atualizando Produto:" + p);
+		
+		System.out.println("Remova Produtos Do Estoque: ");
+		p.Removerprodutos(sc.nextInt());
+		System.out.println("------------------------------------------------------------");
+		System.out.printf("Atualizando Produto: %s, $ %.2f, %d Unidades Total: %.2fR$ \n", p.nome,p.preco,p.estoque,p.tot());
+		
+	}
+
+}

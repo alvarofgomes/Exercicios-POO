@@ -1,0 +1,31 @@
+public class Produto {
+
+	public String nome;
+	public double preco;
+	public int estoque;
+	
+	public double tot() {
+		
+		return preco * estoque;
+		
+	}
+	
+	public void AdicionarProdutos(int estoque) {
+		
+		this.estoque += estoque;
+		
+	}
+	
+	public void Removerprodutos(int estoque) {
+		
+		this.estoque -= estoque;
+		
+	}
+	
+	public String toString() {
+		
+		return "Dados Do Produto:" + nome + ", $ " + String.format("%.2f", preco) + ", " + "Unidades: " + estoque + "Total:" + String.format("%.2f", tot());
+		
+	}
+	
+}
