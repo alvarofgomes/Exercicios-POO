@@ -8,16 +8,14 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		Produto p = new Produto();
-		
 		System.out.println("Digite Os Dados Do Produtos: ");
 		System.out.println("Nome: ");
-		p.nome = sc.nextLine();
+		String nome = sc.nextLine();
 		System.out.println("Preço: ");
-		p.preco = sc.nextDouble();
-		System.out.println("Estoque Do Produto: ");
-		p.estoque = sc.nextInt();
+		double preco = sc.nextDouble();
 
+		Produto p = new Produto(nome, preco);
+		
 		System.out.println("Dados Do Produto: " + p);
 		System.out.println("------------------------------------------------------------");
 		System.out.println("Adicone Mais Produtos Ao Estoque: ");
