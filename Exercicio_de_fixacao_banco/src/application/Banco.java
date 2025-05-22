@@ -10,6 +10,17 @@ public class Banco {
 	private String titular;
 	private double saldo;
 	
+	/*public Banco(int n, String titular) {
+		this.n = n;
+		this.titular = titular;
+	}
+	
+	public Banco(int n, String titular, double saldoInicial) {
+		this.n = n;
+		this.titular = titular;
+		deposito(saldoInicial);
+	}*/
+
 	public int getN() {
 		return n;
 	}
@@ -37,7 +48,7 @@ public class Banco {
 	
 	public void saque(double qtd) {
 		
-		this.saldo -= qtd;
+		this.saldo -= qtd + 5;
 		
 	}
 	

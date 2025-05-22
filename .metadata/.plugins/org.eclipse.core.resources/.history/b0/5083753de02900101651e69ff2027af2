@@ -1,7 +1,0 @@
-package util;
-
-public class Calcular {
-
-	public static final double PI = 3.14159;
-	
-}
